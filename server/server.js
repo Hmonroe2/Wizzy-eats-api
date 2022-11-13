@@ -10,9 +10,6 @@ app.locals.title = 'Restaurants'
 app.use(cors())
 app.use(express.json())
 
-
-
-
 app.locals.restaurants = [
   {
     id: 1,
@@ -325,3 +322,5 @@ app.listen(app.get('port'), () => {
     `${app.locals.title} is running on http://localhost:${app.get('port')}.`
   );
 });
+
+module.exports = app; 
